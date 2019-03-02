@@ -1,3 +1,7 @@
+:root {
+    --title: #ffde36;
+}
+
 html, body {
     min-height: 100%;
 }
@@ -17,7 +21,7 @@ body {
     margin: 0 auto;
 }
 .logo img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .social {
@@ -25,12 +29,10 @@ body {
     line-height: 48px;
     text-align: center;
     text-decoration: none;
-    color: #b4b9e8;
 }
 
 .social__icon {
-    opacity: .5;
-    height: 48px;
+    max-width: 48px;
     margin-right: 10px;
     vertical-align: top;
 }
@@ -38,9 +40,22 @@ body {
 .social__title {
     font-size: 32px;
     font-weight: 200;
+    font-family: "Courier New", sans-serif;
+    color: #b4b9e8;
 
 }
 
-.social:hover {
-    color: red;
+.social__title .js,
+.social__title .weekday{
+    transition: all .1s ease;
+}
+
+.social__title:hover .js {
+    color: #ffde36;
+    text-shadow: 2px 2px 1px #fd6303
+}
+
+.social__title:hover .weekday {
+    color: #ff6463;
+    text-shadow: 2px 2px 1px #bb1242;
 }
